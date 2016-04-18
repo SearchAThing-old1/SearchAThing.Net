@@ -26,6 +26,9 @@
 namespace SearchAThing.Net.SRUDP
 {
 
+    /// <summary>
+    /// SRUDP ref. doc https://searchathing.com/?p=59
+    /// </summary>
     public class Protocol
     {
 

@@ -49,6 +49,10 @@ namespace SearchAThing.Net.SRUDP
         Successful
     }
 
+    /// <summary>
+    /// SRUDP Client
+    /// ref. doc https://searchathing.com/?p=59
+    /// </summary>
     public class Client : IDisposable
     {
         ushort txId;

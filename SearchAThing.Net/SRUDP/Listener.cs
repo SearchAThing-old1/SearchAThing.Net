@@ -34,6 +34,10 @@ using System.Threading.Tasks;
 namespace SearchAThing.Net.SRUDP
 {
 
+    /// <summary>
+    /// SRUDP Listener
+    /// ref. doc https://searchathing.com/?p=59
+    /// </summary>
     public class Listener : IDisposable
     {
 
