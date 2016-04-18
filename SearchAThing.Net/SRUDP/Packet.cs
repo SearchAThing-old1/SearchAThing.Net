@@ -35,11 +35,11 @@ namespace SearchAThing.Net.SRUDP
         Connect = (1 << 1),
         Ack = (1 << 2),
         Data = (1 << 3),
-        Disconnect = (1 << 5)
+        Disconnect = (1 << 4)
     };
 
     /// <summary>
-    /// https://searchathing.com/index.php/2016/02/16/simple-reliable-udp/
+    /// ref. doc https://searchathing.com/?p=59    
     /// </summary>
     public class Packet
     {
