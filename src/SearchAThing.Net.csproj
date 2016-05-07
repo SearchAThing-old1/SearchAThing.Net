@@ -4,17 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{32F9401E-24A2-43EF-861C-64172AD024B2}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{81CF49DB-BD2E-4C72-8016-9268234A2C88}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SearchAThing.Net.SRUDP.TCPBridge.ServoClient</RootNamespace>
-    <AssemblyName>SearchAThing.Net.SRUDP.TCPBridge.ServoClient</AssemblyName>
+    <RootNamespace>SearchAThing.Net</RootNamespace>
+    <AssemblyName>SearchAThing.Net</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -24,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,7 +37,6 @@
     <PlatformTarget>AnyCPU</PlatformTarget>
     <ErrorReport>prompt</ErrorReport>
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-    <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -53,22 +49,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="AnalogReadPackInfo.cs" />
-    <Compile Include="ServoClient.cs" />
+    <Compile Include="SRUDP\Listener.cs" />
+    <Compile Include="SRUDP\Client.cs" />
+    <Compile Include="SRUDP\Exception.cs" />
+    <Compile Include="SRUDP\Packet.cs" />
+    <Compile Include="SRUDP\Protocol.cs" />
+    <Compile Include="SRUDP\TCPBridge\Exception.cs" />
+    <Compile Include="SRUDP\TCPBridge\Client.cs" />
+    <Compile Include="SRUDP\TCPBridge\Server.cs" />
+    <Compile Include="Util\Checksum.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\SearchAThing.Core\SearchAThing.Core\SearchAThing.Core.csproj">
+    <ProjectReference Include="..\..\SearchAThing.Core\src\SearchAThing.Core.csproj">
       <Project>{8162a30e-a46d-4a78-ba12-1f376ac6f1b4}</Project>
       <Name>SearchAThing.Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\SearchAThing.Net\SearchAThing.Net.csproj">
-      <Project>{81cf49db-bd2e-4c72-8016-9268234a2c88}</Project>
-      <Name>SearchAThing.Net</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -83,9 +83,7 @@ namespace SearchAThing.Net.SRUDP
             }
             else
                 Console.WriteLine($"UnManagedAcks type:{packet.Type} id:{id}");
-        }
-
-        int yy = 0;
+        }        
 
         internal TransactionResultEnum Send(PacketType opCodeType, UInt16 ackId, byte[] data = null)
         {
