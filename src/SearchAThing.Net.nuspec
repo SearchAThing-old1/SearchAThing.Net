@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>SearchAThing.Net</id>
+    <version>1.0.0</version>
+    <title>Networking layers for SearchAThing libraries</title>
+    <authors>Lorenzo Delana</authors>
+    <owners>Lorenzo Delana</owners>
+    <licenseUrl>https://github.com/devel0/SearchAThing.Net/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/devel0/SearchAThing.Net</projectUrl>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>SRUDP (Simple Realiable UDP) and other network utilities (Internet Checksum)</description>
+    <releaseNotes>initial package</releaseNotes>
+    <copyright>Copyright(C) 2017 Lorenzo Delana</copyright>
+    <tags>c# networking srudp</tags>
+    <dependencies>      
+    </dependencies>
+  </metadata>  
+</package>
