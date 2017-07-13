@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26621.2
+VisualStudioVersion = 15.0.26711.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchAThing.Net", "src\SearchAThing.Net.csproj", "{81CF49DB-BD2E-4C72-8016-9268234A2C88}"
 EndProject
@@ -14,8 +14,8 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Debug2|Any CPU.ActiveCfg = Debug2|Any CPU
-		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Debug2|Any CPU.Build.0 = Debug2|Any CPU
+		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Debug2|Any CPU.ActiveCfg = Debug|Any CPU
+		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Debug2|Any CPU.Build.0 = Debug|Any CPU
 		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81CF49DB-BD2E-4C72-8016-9268234A2C88}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
