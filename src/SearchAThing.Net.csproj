@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;net462</TargetFrameworks>
+    <TargetFrameworks>net46;net461;net462</TargetFrameworks>
     <Product>Networking layers for SearchAThing libraries</Product>
     <Company />
     <Authors>Lorenzo Delana</Authors>
@@ -14,8 +14,12 @@
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net461|AnyCPU'">
+    <DocumentationFile>bin\Release\net461\SearchAThing.Net.xml</DocumentationFile>
+  </PropertyGroup>
+
   <ItemGroup>
-    <PackageReference Include="SearchAThing.Core" Version="1.0.0-CI00021" />
+    <PackageReference Include="SearchAThing.Core" Version="1.0.0-CI00023" />
   </ItemGroup>
 
 </Project>
