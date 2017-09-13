@@ -10,6 +10,6 @@ Networking layers for SearchAThing libraries.
 ## Installation
 
 - nuget feeds
-  - searchathing :`https://www.myget.org/F/searchathing/api/v3/index.json`
+  - searchathing :`https://www.myget.org/F/searchathing-old1/api/v3/index.json`
   - imagesharp : `https://www.myget.org/F/imagesharp/api/v3/index.json`
 - pre-release package : `SearchAThing.Net`
